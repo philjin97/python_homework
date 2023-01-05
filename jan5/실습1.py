@@ -55,22 +55,10 @@ address['거주지'] = input("거주지를 입력하세요")
 
 basic[name] = address
 print(basic)
-
+        
 # 6. 
 letters = {}
 line = input("문자열을 입력하세요")
-
-for l in line:
-    for n in letters.keys():
-        if l == n:
-            a = letters[n]
-        else:
-            letters[l] = 1
-        
-# 7. 
-letters = {}
-line = input("문자열을 입력하세요")
-a = ""
 
 for l in line:
     if l in letters:
