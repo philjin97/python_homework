@@ -1,0 +1,18 @@
+Boysenberry 3
+Blueberry 4
+Marionberry 3
+Cloudberry 5
+Juniper berry 5
+Salal berry 4
+Elderberry 1
+Mulberry 2
+Raspberry 4
+Bilberry 4
+Cranberry 4
+Honeyberry 4
+Goji berry 2
+Strawberry 3
+Gooseberry 3
+Huckleberry 2
+Salmonberry 3
+Blackberry 4
