@@ -40,7 +40,7 @@ while a != b:
 print(n)
 
 
-1933
+# 1933
 number = int(input())
 for n in range(1,number+1):
     if number % n == 0:
