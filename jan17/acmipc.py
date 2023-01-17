@@ -1,53 +1,53 @@
-# # 9085
+# 9085
 
-# T = int(input())
-# total = 0
+T = int(input())
+total = 0
 
-# for t in range(1, T+1):
-#     N = int(input())
-#     numbers = sum(list(map(int, input().split())))
+for t in range(1, T+1):
+    N = int(input())
+    numbers = sum(list(map(int, input().split())))
  
-#     print(numbers)
+    print(numbers)
 
-# # 10824
+# 10824
 
-# (a, b, c, d) = list(map(str, input().split()))
-# first = a + b
-# second = c + d
-# print(int(first) + int(second))
+(a, b, c, d) = list(map(str, input().split()))
+first = a + b
+second = c + d
+print(int(first) + int(second))
 
-# # 3009 
+# 3009 
 
-# row = []
-# column = []
+row = []
+column = []
 
-# for n in range(3):
-#     (a, b) = list(map(int, input().split()))
-#     if a in row:
-#         row.remove(a)
-#         if b in column: 
-#             column.remove(b)
-#         else: 
-#             column.append(b)
-#     else:
-#         row.append(a)
-#         if b in column: 
-#             column.remove(b)
-#         else: 
-#             column.append(b)
+for n in range(3):
+    (a, b) = list(map(int, input().split()))
+    if a in row:
+        row.remove(a)
+        if b in column: 
+            column.remove(b)
+        else: 
+            column.append(b)
+    else:
+        row.append(a)
+        if b in column: 
+            column.remove(b)
+        else: 
+            column.append(b)
     
-# print(row[0], column[0])
+print(row[0], column[0])
 
-# # 10952 
+# 10952 
 
-# a = 1
-# b = 1
+a = 1
+b = 1
 
-# while a != 0 and b != 0:
-#     (a, b) = list(map(int, input().split()))
-#     if a == 0 and b == 0:
-#         break 
-#     print(a + b)
+while a != 0 and b != 0:
+    (a, b) = list(map(int, input().split()))
+    if a == 0 and b == 0:
+        break 
+    print(a + b)
 
 # 1110 
 
@@ -71,4 +71,16 @@ while number != result:
 
 print(cnt)
 
+# N = int(input())
+# new = N # 새로운 수
+# cnt = 0
+
+# while True:
+#     a, b = divmod(new, 10) # a 10의자리 , b 1의자리 
+#     new = 10*b + (a+b)%10
+#     cnt += 1
+#     if new == N:
+#         break
+    
+# print(cnt)
 
