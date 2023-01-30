@@ -1,6 +1,13 @@
-# # 1225 
+# 1225 
 
-# (a,b) = input().split()
+num1, num2 = input().split()
+num1, num2 = list(map(int, num1)), list(map(int, num2))
+
+print(sum(num1) * sum(num2))
+
+# import sys
+
+# (a,b) = sys.stdin.readline().split()
 # total = 0
 
 # for n in range(len(a)):
@@ -9,30 +16,30 @@
 
 # print(total)
 
-# # 2438
+# 2438
 
-# n = int(input())
+n = int(input())
 
-# for a in range(1, n+1):
-#     print('*' * a)
+for a in range(1, n+1):
+    print('*' * a)
 
-# # 2739
+# 2739
 
-# n = int(input())
-# matrix = []
+n = int(input())
+matrix = []
 
-# matrix = [f'{n} * {a} = {n * a}' for a in range(1,10)]
+matrix = [f'{n} * {a} = {n * a}' for a in range(1,10)]
 
-# for i in matrix:
-#     print(i)
+for i in matrix:
+    print(i)
 
-# # 2953
+# 2953
 
-# scores = [(a, sum(list(map(int, input().split())))) for a in range(1, 6)]
+scores = [(a, sum(list(map(int, input().split())))) for a in range(1, 6)]
 
-# scores = sorted(scores, key = lambda x:x[1], reverse=True)
+scores = sorted(scores, key = lambda x:x[1], reverse=True)
 
-# print(*scores[0])
+print(*scores[0])
 
 # 2669 
 
@@ -44,8 +51,7 @@ for a in range(4):
         for i in range(position[a][1], position[a][3]):
             if (str(n) + str(i)) not in rec:
                 rec.append(str(n) + str(i))
-    
-print(rec)
+
 print(len(rec))
     
 
