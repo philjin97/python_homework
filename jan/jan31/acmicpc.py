@@ -36,20 +36,31 @@
 
 # 9455
 
-T = int(input())
+for _ in range(int(input())):
+    m, n = map(int, input().split())
+    grid = [[]for _ in range(n)]
 
-for t in range(1, T+1):
-    (a, b) = list(map(int, input().split()))
-    data = [list(map(int, input().split())) for n in range(a)]
-    new_data = data
-    for col in range(a):
-        for row in range(b):
-            new_data[][]= data[a][b]
+    for i in range(m):
+        a = list(input().split())
+        for j in range(n):
+            grid[j].append(a[j])
+
+print(grid)
+
+# T = int(input())
+
+# for t in range(1, T+1):
+#     (a, b) = list(map(int, input().split()))
+#     data = [list(map(int, input().split())) for n in range(a)]
+#     new_data = data
+#     for col in range(a):
+#         for row in range(b):
+#             new_data[][]= data[a][b]
 
 
                 
 
-print(data, new_data)
+# print(data, new_data)
 
 
 
