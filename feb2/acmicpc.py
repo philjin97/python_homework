@@ -50,32 +50,63 @@
 
 # 1251
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-string = input()
-numbering = []
+string = "mobitel"
 
-for a in string:
-    for i in range(len(alphabet)):
-        if alphabet[i] == a:
-            numbering.append([i , a])
+string_list = []
 
-numbering = sorted(numbering)
-print(numbering)
+N = len(string)
 
-first_part = string[:string.find(numbering[0][1]) + 1]
-string = string[string.find(numbering[0][1]) + 1:]
 
-for n in range(1, len(numbering)+1):
-    if numbering[n][1] in string:
-        second_part = string[:string.find(numbering[n][1]) + 1]
-        string = string[string.find(numbering[n][1]) + 1:]
-        break
+# i 와 j 의 구간을 구하는 것이 어려운 문제
+for i in range(1, N -1):
+    for j in range(i + 1, N):
+        a = string[0:i]
+        b = string[i:j]
+        c = string[j:N]
 
-first_part = first_part[::-1]
-second_part = second_part[::-1]
-string = string[::-1]
+        reversed_a = a[::-1]
+        reversed_b = b[::-1]
+        reversed_c = c[::-1]
 
-print(first_part, second_part, string, sep='')
+        join_string = reversed_a + reversed_b + reversed_c
+
+        string_list.append(join_string)
+
+print(min(string_list))
+
+# heapq도 사용 가능 
+
+# import heapq import
+# heappush(string_heap, join_string)
+# print(heappop(string_heap))
+
+
+# alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# string = input()
+# numbering = []
+
+# for a in string:
+#     for i in range(len(alphabet)):
+#         if alphabet[i] == a:
+#             numbering.append([i , a])
+
+# numbering = sorted(numbering)
+# print(numbering)
+
+# first_part = string[:string.find(numbering[0][1]) + 1]
+# string = string[string.find(numbering[0][1]) + 1:]
+
+# for n in range(1, len(numbering)+1):
+#     if numbering[n][1] in string:
+#         second_part = string[:string.find(numbering[n][1]) + 1]
+#         string = string[string.find(numbering[n][1]) + 1:]
+#         break
+
+# first_part = first_part[::-1]
+# second_part = second_part[::-1]
+# string = string[::-1]
+
+# print(first_part, second_part, string, sep='')
 
 
 
